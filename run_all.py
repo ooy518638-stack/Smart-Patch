@@ -1,7 +1,4 @@
-"""
-run_all.py — شغّلي هذا الملف وحده:  python run_all.py
-يحسب كل النتائج ويرسم الأشكال الستة. المدة المتوقعة: 2–5 دقائق.
-"""
+
 import json, time
 import simulate as S
 import ai_model as AI

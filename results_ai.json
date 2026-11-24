@@ -1,0 +1,131 @@
+{
+ "feature_names": [
+  "rad_early",
+  "rad_mid",
+  "rad_late",
+  "rad_washout",
+  "therm_early",
+  "therm_late",
+  "therm_persist",
+  "therm_slope"
+ ],
+ "classes": [
+  "Normal",
+  "Venous retention",
+  "Extravasation"
+ ],
+ "Logistic regression": {
+  "test": {
+   "accuracy": 0.9976666666666667,
+   "confusion": [
+    [
+     997,
+     3,
+     0
+    ],
+    [
+     1,
+     996,
+     3
+    ],
+    [
+     0,
+     0,
+     1000
+    ]
+   ],
+   "sens_at_5far": 1.0
+  },
+  "hard": {
+   "accuracy": 0.9266666666666666,
+   "confusion": [
+    [
+     1000,
+     0,
+     0
+    ],
+    [
+     0,
+     999,
+     1
+    ],
+    [
+     207,
+     12,
+     781
+    ]
+   ],
+   "sens_at_5far": 0.988
+  }
+ },
+ "Random forest": {
+  "test": {
+   "accuracy": 0.995,
+   "confusion": [
+    [
+     996,
+     4,
+     0
+    ],
+    [
+     0,
+     994,
+     6
+    ],
+    [
+     0,
+     5,
+     995
+    ]
+   ],
+   "sens_at_5far": 1.0
+  },
+  "hard": {
+   "accuracy": 0.8363333333333334,
+   "confusion": [
+    [
+     1000,
+     0,
+     0
+    ],
+    [
+     0,
+     997,
+     3
+    ],
+    [
+     135,
+     353,
+     512
+    ]
+   ],
+   "sens_at_5far": 0.975
+  }
+ },
+ "Hand rule (baseline)": {
+  "test": {
+   "sens_at_5far": 0.837
+  },
+  "hard": {
+   "sens_at_5far": 0.0
+  }
+ },
+ "Radiation only": {
+  "test": {
+   "sens_at_5far": 0.884
+  },
+  "hard": {
+   "sens_at_5far": 0.001
+  }
+ },
+ "lr_weights_extrav": [
+  2.7873677085345867,
+  -2.5542485141703075,
+  2.6930923188621505,
+  -1.3927656201681997,
+  -0.3649575002262486,
+  2.6815423236237614,
+  4.131568305663137,
+  0.09704648365584892
+ ]
+}
